@@ -1,0 +1,21 @@
+/* Dodawanie dwóch u³amków zwyk³ych */
+
+#include <stdio.h>
+
+int main(void)
+{
+  int num1, denom1, num2, denom2, result_num, result_denom;
+
+  printf("Podaj pierwszy u³amek: ");
+  scanf("%d/%d", &num1, &denom1);
+
+  printf("Podaj drugi u³amek: ");
+  scanf("%d/%d", &num2, &denom2);
+
+  result_num = num1 * denom2 + num2 * denom1;
+  result_denom = denom1 * denom2;
+  printf("Suma u³amków wynosi %d/%d\n",
+         result_num, result_denom);
+
+  return 0;
+}
