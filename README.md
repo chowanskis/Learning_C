@@ -9,3 +9,5 @@ Publisher O'Reilly Media Publication date January 5, 2016
 C Programming: A Modern Approach, 2nd Edition
 ISBN-10 0393979504  ISBN-13 978-0393979503 Edition 2nd
 Publisher W. W. Norton & Company Publication date April 19, 2008
+
+C PROGRAMMING LANGUAGE CERTIFIED ASSOCIATE – CLA Sample Exam Questions
