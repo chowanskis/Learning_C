@@ -15,3 +15,7 @@ Note that GCC does not support all the features of the C11 standard. To
 our knowledge, there is at present only one generally available C
 compiler that claims to do so, namely Pelles C for Windows (see
 http://www.smorgasbordet.com/pellesc/index.htm).
+
+From Sławomir Chowański
+-------------------------------------------
+I've added some examples to the topics presented in each chapter.
