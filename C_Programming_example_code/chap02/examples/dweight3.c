@@ -16,7 +16,7 @@ int main(void)
   scanf("%d", &width);
 
   volume = height * length * width;
-  weight = (volume + 165) / INCHES_PER_POUND;
+  weight = (volume + INCHES_PER_POUND - 1) / INCHES_PER_POUND;
 
   printf("Objętość (cale sześcienne): %d\n", volume);
   printf("Gabaryt (funty rozliczeniowe): %d\n", weight);
