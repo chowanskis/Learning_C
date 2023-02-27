@@ -1,4 +1,4 @@
-/* Przeliczanie temperatury ze skali Fahrenheita na skalê Celsjusza */
+/* Przeliczanie temperatury ze skali Fahrenheita na skalÄ™ Celsjusza */
 
 #include <stdio.h>
 
@@ -9,7 +9,7 @@ int main(void)
 {
   float fahrenheit, celsius;
 
-  printf("Podaj temperaturê (F): ");
+  printf("Podaj temperaturÄ™ (F): ");
   scanf("%f", &fahrenheit);
 
   celsius = (fahrenheit - FREEZING_PT) * SCALE_FACTOR;
