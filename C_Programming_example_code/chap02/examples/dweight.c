@@ -1,4 +1,4 @@
-/* Obliczanie gabarytu przesy³ki o wymiarach 12 x 10 x 8 cali */
+/* Obliczanie gabarytu przesyÅ‚ki o wymiarach 12 x 10 x 8 cali */
 
 #include <stdio.h>
 
@@ -13,7 +13,7 @@ int main(void)
   weight = (volume + 165) / 166;
 
   printf("Wymiary(cale): %dx%dx%d\n", length, width, height);
-  printf("Objêtoœæ (cale szeœcienne): %d\n", volume);
+  printf("ObjÄ™toÅ›Ä‡ (cale szeÅ›cienne): %d\n", volume);
   printf("Gabaryt (funty rozliczeniowe): %d\n", weight);
 
   return 0;
