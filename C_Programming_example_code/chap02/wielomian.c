@@ -32,7 +32,7 @@ int main() {
     int x4 = a * a * a * a;
     int x3 = a * a * a;
     int x2 = a * a;
-    int x = a;
+    int x  = a;
 
     // Normalne obliczenia arytmetyczne
     printf( "Wielomian 3x5 + 2x4 -5x3 -x2 +7x - 6 ma wartość %d .\n", 
