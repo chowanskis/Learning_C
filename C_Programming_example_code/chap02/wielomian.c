@@ -38,8 +38,8 @@ int main() {
     printf( "Wielomian 3x5 + 2x4 -5x3 -x2 +7x - 6 ma wartość %d .\n", 
             3 * x5 + 2 * x4 - 5 * x3 - x2 + 7 * x -6);
 
-    // Wielomian obliczany wg. reguły Hornera.
-    printf( "Wielomian 3x5 + 2x4 -5x3 -x2 +7x - 6 ma wartość %d .\n", 
+    // Wielomian obliczany wg reguły Hornera.
+    printf( "Wielomian obliczny wg reguły Hornera ma  wartość %d .\n", 
             ((((3 * x + 2) * x -5)* x - 1) * x + 7) * x - 6);
 
     return 0;
