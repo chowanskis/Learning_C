@@ -1,5 +1,5 @@
 /*
- * kredyt.c
+ * kredyta.c
  * Copyright 2023 Sławomir Chowański
  * 
  * This program is free software; you can redistribute it and/or modify
@@ -20,12 +20,14 @@
 
 #define MONTHS_IN_YEAR 12.0f
 #define PROCENT_FACTOR 100.0f
+#define ZERO_ZADLUZENIA 0.0f
 
 #include <stdio.h>
 
 int main() {
 
-    float kwota_kredytu, oprocentowanie_roczne, rata, odsetki;
+    int count = 1;
+    float kwota_kredytu, oprocentowanie_roczne, rata, odsetki;   
 
     printf( "Prosze podać kwotę kredytu w złotych: " );
     scanf( "%f", &kwota_kredytu );
@@ -39,14 +41,14 @@ int main() {
     kwota_kredytu = ( kwota_kredytu - rata ) + odsetki;
     printf( "Kwota do spłaty po pierwszej racie: %.2f \n", kwota_kredytu );
 
-    // Kolejna rata - odsetki liczone od kwoty kredytu po spłacie raty.
-    odsetki = ( kwota_kredytu ) * ( ( oprocentowanie_roczne / PROCENT_FACTOR ) / MONTHS_IN_YEAR ); 
-    kwota_kredytu = ( kwota_kredytu - rata ) + odsetki;
-    printf( "Kwota do spłaty po drugiej racie: %.2f \n", kwota_kredytu );
-
-    odsetki = ( kwota_kredytu ) * ( ( oprocentowanie_roczne / PROCENT_FACTOR ) / MONTHS_IN_YEAR ); 
-    kwota_kredytu = ( kwota_kredytu - rata ) + odsetki;
-    printf( "Kwota do spłaty po trzeciej racie: %.2f \n", kwota_kredytu );
+    while (kwota_kredytu > ZERO_ZADLUZENIA)
+    {
+        odsetki = ( kwota_kredytu ) * ( ( oprocentowanie_roczne / PROCENT_FACTOR ) / MONTHS_IN_YEAR ); 
+        kwota_kredytu = ( kwota_kredytu - rata ) + odsetki;
+        count++;
+    }
+    
+    printf( "Kredyt spłacono w : %2d ratach. \n", count );
 
     return 0;
 }

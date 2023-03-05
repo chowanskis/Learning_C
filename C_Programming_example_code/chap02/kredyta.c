@@ -1,5 +1,5 @@
 /*
- * kredyt.c
+ * kredyta.c
  * Copyright 2023 Sławomir Chowański
  * 
  * This program is free software; you can redistribute it and/or modify
@@ -25,7 +25,8 @@
 
 int main() {
 
-    float kwota_kredytu, oprocentowanie_roczne, rata, odsetki;
+    enum {count = 11};
+    float kwota_kredytu, oprocentowanie_roczne, rata, odsetki;   
 
     printf( "Prosze podać kwotę kredytu w złotych: " );
     scanf( "%f", &kwota_kredytu );
@@ -40,13 +41,12 @@ int main() {
     printf( "Kwota do spłaty po pierwszej racie: %.2f \n", kwota_kredytu );
 
     // Kolejna rata - odsetki liczone od kwoty kredytu po spłacie raty.
-    odsetki = ( kwota_kredytu ) * ( ( oprocentowanie_roczne / PROCENT_FACTOR ) / MONTHS_IN_YEAR ); 
-    kwota_kredytu = ( kwota_kredytu - rata ) + odsetki;
-    printf( "Kwota do spłaty po drugiej racie: %.2f \n", kwota_kredytu );
-
-    odsetki = ( kwota_kredytu ) * ( ( oprocentowanie_roczne / PROCENT_FACTOR ) / MONTHS_IN_YEAR ); 
-    kwota_kredytu = ( kwota_kredytu - rata ) + odsetki;
-    printf( "Kwota do spłaty po trzeciej racie: %.2f \n", kwota_kredytu );
-
+    for (size_t i = 0; i < count; i++)
+    {
+        odsetki = ( kwota_kredytu ) * ( ( oprocentowanie_roczne / PROCENT_FACTOR ) / MONTHS_IN_YEAR ); 
+        kwota_kredytu = ( kwota_kredytu - rata ) + odsetki;
+        printf( "Kwota do spłaty po kolejnej racie:  %.2f \n", kwota_kredytu );
+    }
+    
     return 0;
 }
