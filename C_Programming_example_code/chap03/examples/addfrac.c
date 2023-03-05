@@ -1,4 +1,7 @@
 /* Dodawanie dwóch ułamków zwykłych */
+// Sławomir Chowański: Przerobiłem program aby
+// przyjmował spację przed wczytaniem liczb.
+// Change:  scanf("%d/%d", ...) to scanf("%d /%d", ...)
 
 #include <stdio.h>
 
@@ -7,10 +10,10 @@ int main(void)
   int num1, denom1, num2, denom2, result_num, result_denom;
 
   printf("Podaj pierwszy ułamek: ");
-  scanf("%d/%d", &num1, &denom1);
+  scanf("%d /%d", &num1, &denom1);
 
   printf("Podaj drugi ułamek: ");
-  scanf("%d/%d", &num2, &denom2);
+  scanf("%d /%d", &num2, &denom2);
 
   result_num = num1 * denom2 + num2 * denom1;
   result_denom = denom1 * denom2;
