@@ -33,7 +33,6 @@ int main(){
     scanf( "%d /%d /%d", &day, &month, &year );
     printf( "\n" );
 
-
     printf( "Towar \t Cena \t\t Data   \n" );
     printf( "      \t jedn.\t\t zakupu \n" );
     printf( "---------------------------------\n" );  
