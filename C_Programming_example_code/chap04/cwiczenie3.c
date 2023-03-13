@@ -18,6 +18,9 @@
  * MA 02110-1301, USA.
  */
 
+//  gcc -std=c89 cwiczenie3.c
+//  gcc -std=c11 cwiczenie3.c
+
 
 #include <stdio.h>
 
