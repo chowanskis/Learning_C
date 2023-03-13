@@ -41,6 +41,5 @@ int main() {
     printf( "Wyrażenie (-i) / j to: %d \n", (-i) / j ); 
     printf( "Wyrażenie -(i / j) to: %d \n", -(i / j) ); 
   
-  
     return 0;
 }
