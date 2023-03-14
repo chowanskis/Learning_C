@@ -25,7 +25,7 @@ int main(void)
   if (commission < 39.00f)
     commission = 39.00f;
 
-  printf("Prowizja wynosi: %.2f z�\n", commission);
+  printf("Prowizja wynosi: %.2f zł\n", commission);
 
   return 0;
 }
