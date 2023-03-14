@@ -1,4 +1,4 @@
-/* Wypisywanie daty w zapisie urzêdowym */
+/* Wypisywanie daty w zapisie urzÄ™dowym */
 
 #include <stdio.h>
 
@@ -9,7 +9,7 @@ int main(void)
   printf("Enter date (mm/dd/yy): ");
   scanf("%d /%d /%d", &month, &day, &year);
 
-  printf("Zapis urzêdowy: %d", day);
+  printf("Zapis urzÄ™dowy: %d", day);
   printf(" ");
 
   switch (month) {
@@ -21,8 +21,8 @@ int main(void)
     case 6:  printf("czerwca");      break;
     case 7:  printf("lipca");        break;
     case 8:  printf("sierpnia");     break;
-    case 9:  printf("wrzeœnia");     break;
-    case 10: printf("paŸdziernika"); break;
+    case 9:  printf("wrzeÅ›nia");     break;
+    case 10: printf("paÅºdziernika"); break;
     case 11: printf("listopada");    break;
     case 12: printf("grudnia");      break;
   }
