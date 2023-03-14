@@ -1,4 +1,4 @@
-/* Oblicza prowizjê brokera gie³dowego */
+/* Oblicza prowizjÄ™ brokera gieÅ‚dowego */
 
 #include <stdio.h>
 
@@ -6,7 +6,7 @@ int main(void)
 {
   float commission, value;
 
-  printf("Podaj kwotê transakcji: ");
+  printf("Podaj kwotï¿½ transakcji: ");
   scanf("%f", &value);
 
   if (value < 2500.00f)
@@ -25,7 +25,7 @@ int main(void)
   if (commission < 39.00f)
     commission = 39.00f;
 
-  printf("Prowizja wynosi: %.2f z³\n", commission);
+  printf("Prowizja wynosi: %.2f zï¿½\n", commission);
 
   return 0;
 }
